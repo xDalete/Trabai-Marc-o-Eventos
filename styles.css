@@ -1,0 +1,35 @@
+.box {
+    height: 300px;
+    width: 300px;
+}
+
+.box:hover {
+    animation: animacao 1s ease-in-out infinite alternate;
+    transition-duration: .2s;
+}
+
+.innerBox {
+    background-color: black;
+    height: 100px;
+    width: 100px;
+    animation: rotacao 1s ease-in-out 4;
+
+}
+
+@keyframes rotacao {
+    100% {
+        rotate: 90deg; 
+    }
+}
+
+@keyframes animacao {
+    50% {
+        background-color: red;
+    }
+
+    100% {
+        width: 150px;
+        height: 150px;
+        background-color: blue;
+    }
+}
